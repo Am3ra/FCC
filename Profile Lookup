@@ -30,7 +30,7 @@ var contacts = [
 
 function lookUpProfile(firstName, prop){
 // Only change code below this line
- for (i=0;i< contacts.length;i++){
+ for (i=0;i< contacts.length;i++){ //can replace with regex
    if (contacts[i].firstName==firstName){//check name exists
      if(contacts[i].hasOwnProperty(prop) && contacts[i][prop]!==""){ //check prop isnt empty
        return contacts[i][prop]; //give result
