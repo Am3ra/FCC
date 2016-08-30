@@ -18,3 +18,11 @@ function palindrome(pal) {
 
 
 palindrome("A man, a plan, a canal. Panama");
+
+//simple version
+
+var str = 'asdfghjkl';
+var strReverse = str.split('').reverse().join(''); // 'lkjhgfdsa'
+str === strReverse
+
+// can make function
