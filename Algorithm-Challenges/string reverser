@@ -5,5 +5,9 @@ function reverseString(str) {
   string = string.join('');
   return string;
 }
+// better version
+function reverseString(str){
+  str.split('').reverse('').join('');
+}
 
 reverseString("hello");//returns "olleh"
