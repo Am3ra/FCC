@@ -1,0 +1,10 @@
+
+function factorialize(num) {
+  var cool= 1;
+  for (i=1; i<=num ; i++){
+    cool*=i;
+  }
+  return cool;
+}
+
+factorialize(5);//returns 5!
