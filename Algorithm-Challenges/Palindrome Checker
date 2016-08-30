@@ -1,0 +1,20 @@
+function reverseString(str) {
+  var string = str.split(""); 
+  string = string.reverse();
+  string = string.join('');
+  console.log(string);
+  return string;
+}
+
+function palindrome(pal) {
+  pal=pal.replace(/[\W_]+/g, "");
+  pal=pal.toLowerCase();
+ if(reverseString(pal)==pal)
+ { 
+  return true;}
+ return false;
+} 
+
+
+
+palindrome("A man, a plan, a canal. Panama");
