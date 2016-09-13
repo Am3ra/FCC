@@ -1,0 +1,20 @@
+
+function mutation(arr) {
+ var org = arr[0].toLowerCase();
+ var sec = arr[1].toLowerCase();
+ var result;
+  for (i=0;i<sec.length;i++) {
+  var c = sec.charAt(i);
+    if (org.indexOf(c)!==(-1)){
+     result = true;
+   } else {
+     result = false;
+     return result;
+   }
+  console.log(result);
+  }
+  return result; 
+}
+
+console.log(mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]));
+
