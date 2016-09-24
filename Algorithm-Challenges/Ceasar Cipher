@@ -1,0 +1,22 @@
+
+function rot13(str) { // LBH QVQ VG!
+  var a="";
+  str.split("");
+  for (i=0;i<str.length;i++){
+  	var x = str.charCodeAt(i);
+    if (x<64 || x>91){
+    		a += str[i];
+    }
+    if (x>64 && x<91){
+    	if (x-64 <= 13){
+    		a += String.fromCharCode(x+13);
+    	} else {
+    		a += String.fromCharCode(x-13);
+    	}
+    }
+  }
+  return a;
+}
+
+// Change the inputs below to test
+rot13("SERR CVMMN!");
