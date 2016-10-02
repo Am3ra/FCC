@@ -7,8 +7,7 @@ function reverseString(str) {
 }
 
 function palindrome(pal) {
-  pal=pal.replace(/[\W_]+/g, "");
-  pal=pal.toLowerCase();
+  pal=pal.replace(/[\W_]+/g, "").toLowerCase();
  if(reverseString(pal)==pal)
  { 
   return true;}
