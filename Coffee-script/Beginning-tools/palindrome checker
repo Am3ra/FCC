@@ -1,0 +1,32 @@
+reverseString = (str) ->
+  string = str.split('').reverse().join('')
+
+palindrome = (pal) ->
+  pal = pal.replace(/[\W_]+/g, '').toLowerCase()
+  if `reverseString(pal) == pal`
+    return true
+  false
+
+palindrome "five|\_/|four"
+
+
+
+
+
+
+var palindrome, reverseString;
+
+reverseString = function(str) {
+  var string;
+  return string = str.split('').reverse().join('');
+};
+
+palindrome = function(pal) {
+  pal = pal.replace(/[\W_]+/g, '').toLowerCase();
+  if (reverseString(pal) == pal) {
+    return true;
+  }
+  return false;
+};
+
+palindrome("eye");
