@@ -1,0 +1,12 @@
+truncateString= (str, num) ->
+	if num >= str.length
+	else
+		if num <= 3 
+			str = str[0...num]
+		else 
+			str = str[0...(num-3)]
+	str = str + '...'
+	
+truncateString "Peter Piper picked a peck of pickled peppers", 14
+
+minus 6 lines
