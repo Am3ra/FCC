@@ -1,10 +1,10 @@
 function convertHTML(str) {
   
-  str=str.replace(/\&/gi, "&amp;");
-  str=str.replace(/</gi, "&lt;");
-  str=str.replace(/>/gi, "&gt;");
-  str=str.replace(/'/gi, "&apos;");
-  str=str.replace(/"/gi, "&quot;");
+  str=str.replace(/\&/g, "&amp;");
+  str=str.replace(/</g, "&lt;");
+  str=str.replace(/>/g, "&gt;");
+  str=str.replace(/'/g, "&apos;");
+  str=str.replace(/"/g, "&quot;");
   
   
   return str;
