@@ -1,7 +1,7 @@
 function sumFibs(num) {
   var fib1 = 1;
   var fib2 = 1;
-  var fib3 = 0;
+  var fib3;
   var odds = [1];
   while (fib1 <= num){
     
