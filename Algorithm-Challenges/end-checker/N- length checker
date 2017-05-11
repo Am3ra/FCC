@@ -1,5 +1,4 @@
-
-function confirmEnding(str, target) {
+function confirmEnding (str, target) {
 var same=true;
    for(i=1; i<=target.length; i++){
      if (target[target.length-i]===str[str.length - i]){
