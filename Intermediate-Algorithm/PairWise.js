@@ -1,7 +1,7 @@
 function pairwise(arr, arg) {
   var buffer = [];
 
-
+console.log("cool");
   arr.map(function(element, index){
 
 
