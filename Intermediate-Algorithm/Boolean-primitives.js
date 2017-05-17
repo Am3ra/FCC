@@ -1,10 +1,9 @@
-
 function booWho(bool) {
   if(typeof(bool) === "boolean"){
   return true;
-} else{
+} else {
   return false;
-}
+  }
 }
 
-booWho(1);
+ booWho(46);
