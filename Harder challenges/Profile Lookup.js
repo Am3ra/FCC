@@ -1,4 +1,3 @@
-
 //Setup
 var contacts = [
     {
@@ -35,7 +34,7 @@ function lookUpProfile(firstName, prop){
      if(contacts[i].hasOwnProperty(prop) && contacts[i][prop]!==""){ //check prop isnt empty
        return contacts[i][prop]; //give result
      }
-     else if (contacts[i].hasOwnProperty(prop)===false || contacts[i][prop]===""){ //prop is empty: 
+     else if (contacts[i].hasOwnProperty(prop)===false || contacts[i][prop]===""){ //prop is empty:
        return "No such property";      //return no prop
      }
    }
