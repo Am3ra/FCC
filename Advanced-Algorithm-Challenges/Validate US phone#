@@ -1,0 +1,10 @@
+
+function telephoneCheck(str) {
+  var regex = /(^\d{3}-\d{3}-\d{4})|(^\(\d{3}\)\d{3}-\d{4})|(^\(\d{3}\)\s\d{3}-\d{4})|(^\d{3}\s\d{3}\s\d{4})|(^1\d{10})|(^\d{10}$)|(^1\s\d{3}\s\d{3}\s\d{4})|(^1\s\d{3}-\d{3}-\d{4})|(^1\(\d{3}\)\d{3}-\d{4})|(^1\s\(\d{3}\)\s\d{3}-\d{4})/g;
+  regex.lastIndex = 0;
+  return regex.test(str);
+}
+
+//Ways to improve: add "$" to signify end of string after each case.
+
+telephoneCheck("(6505552368)");
