@@ -1,0 +1,46 @@
+//Find the smallest common multiple of the provided parameters that can be evenly divided by both, as well as by all sequential numbers in the range between these parameters.
+function smallestCommons(arr) {
+  var set1=[];
+  var arr2=[];
+  var max = 1;
+  var yey;
+  result = arr2[1];
+  
+  if (arr[0]>arr[1]){
+    arr2[0]=arr[0];
+    arr2[1]=arr[1];
+  } else{
+    arr2[0]=arr[1];
+    arr2[1]=arr[0];
+  }
+  
+  for (i = arr2[0]; i>=arr2[1];i--){
+    set1.push(i);
+  }
+  
+  
+  for (i=0; i<set1.length;i++){
+    max *= set1[i];
+  }
+  
+  for (i = set1[0]; i<=max;i+=set1[0]){
+    yey=0;
+    for (j=0;j<set1.length;j++){
+      if(i%set1[j]!==0){
+        break;
+    }else{
+      yey++;
+    }
+    
+   }
+   if(yey == set1.length){
+      return i;
+    }
+  }
+
+  
+ 
+}
+
+
+smallestCommons([1, 13])
