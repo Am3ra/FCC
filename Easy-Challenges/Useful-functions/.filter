@@ -9,4 +9,3 @@ var newArray = oldArray.filter(function(val){
 });
 
 //returns values less than 6 try
-//asserting that stuff works
