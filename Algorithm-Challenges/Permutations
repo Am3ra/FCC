@@ -1,0 +1,26 @@
+function permAlone(str) {
+  var arr = [];
+  
+  for(var i in str){
+    var curr=[];
+    //console.log(i);
+    if (arr.length === 0){
+      arr.push(str[i]);
+      continue;
+    } 
+    for(var j in arr){
+      curr.push(str[i]+arr[j]);
+      for(var k in arr[j]){
+        var now = arr[j].slice(0).split("");
+        now.splice(k+1,0,str[i]);
+        curr.push(now.join(""));
+      }
+    console.log(curr);
+    }
+    arr = curr.slice(0);
+  }
+ 
+  return arr;
+}
+
+permAlone('aab');
