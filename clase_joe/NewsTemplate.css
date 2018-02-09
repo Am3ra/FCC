@@ -44,7 +44,7 @@ body{
 }
 
 .headerImage {
-    width: 50%;
+    width: 49%;
     height: 300px;
     display: inline-block;
 }
@@ -56,4 +56,47 @@ body{
 #img2{
     background-image: url(jeremy-bishop-262147.jpg);
     background-size: cover;
+}
+
+.mainMenuList li{
+    display:inline-block;
+    width: 19%;
+    background-color: #000000;
+    color: #ccc;
+    text-align: center;
+}
+
+#mainContent{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.newsItem{
+    display: flex;
+    flex-direction: column;
+    
+    flex:1;
+}
+
+.newsItem .title{
+    background-color:aquamarine;
+    font-weight: 800;
+    text-align: center;
+    /* margin: 10px; */
+    border: black solid 2px;
+}
+
+.newsItem .seeMore{
+    background-color: black;
+    cursor: pointer;
+    background-repeat: 10px;
+    width: 30%;
+    text-align: center;
+    color: wheat;
+    align-self: center;
+}
+
+.newsItem .seeMore:hover{
+    background-color: #fff;
+    color: black;
 }
