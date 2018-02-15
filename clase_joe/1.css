@@ -1,0 +1,24 @@
+@keyframes backChange{
+    0%{
+        background-color: aqua;
+    }
+    50%{
+        background-color: #000000;
+        left:30%;
+    }
+    100%{
+        background-color: bisque;
+    }
+}
+
+#myDiv{
+    width:400px;
+    height: 400px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    background-color: beige;
+    animation-name: backChange ;
+    animation-duration: 10s;
+    animation-direction: alternate;
+}
