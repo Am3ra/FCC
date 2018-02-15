@@ -1,0 +1,36 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+.logo{
+    text-align: center;
+    font-size: 10vh;
+    padding-top: 5vh;
+}
+.container{
+    margin:auto;
+    margin-top: 5vh;
+    width: 70vw;
+    height: 70vh;
+    font-size: 0;
+    position: relative;
+}
+.inner{
+    display: inline-block;
+    height: 50%;
+    width: 50%;
+    background-image: url("jeremy-bishop-262147.jpg");
+    background-size: cover;
+    z-index: -1;
+}
+
+.mid{
+    z-index: 1;
+    font-size: 30vh;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
