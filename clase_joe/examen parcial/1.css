@@ -51,6 +51,7 @@ body {
     margin: 5%;
     margin-right: auto;
     align-self: flex-end;
+    background-size: cover;
 }
 .inner2{
     background-image: url("martin-jernberg-80106.jpg");
@@ -58,4 +59,5 @@ body {
     width: 20%;
     margin: 5%;
     margin-left: auto;
+    background-size: cover;
 }
