@@ -1,0 +1,10 @@
+.tableStyle{
+    border: solid 1px red;
+    width: 50%;
+    margin: 0 auto;
+}
+
+input{
+    color: white;
+    background-color: #000000;
+}
