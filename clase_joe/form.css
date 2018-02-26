@@ -8,3 +8,28 @@ input{
     color: white;
     background-color: #000000;
 }
+.tableStyle2 {
+    border: 1px groove  blue;
+    width: 70%;
+    margin: 0 auto;
+    border-style: groove;
+    box-shadow: aqua 13px 1px 20px;
+}
+
+@keyframes backgroundAnimation{
+    0%{
+        background-color: beige;
+    }
+    50%{
+        background-color: chartreuse;
+    }
+    100%{
+        background-color: deeppink;
+    }
+}
+
+.backChange{
+    animation-name: backgroundAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}

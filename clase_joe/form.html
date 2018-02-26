@@ -5,20 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="form.css">
-    
+
     <title>Document</title>
 </head>
 
-
 <body>
     <script>
-        function makeNoise(){
-            alert("hi!");
+        function replaceStyle(id, styleToRemove, styleToAdd) {
+            document.getElementById(id).classList.remove(styleToRemove);
+            document.getElementById(id).classList.add(styleToAdd);
+        }
+
+        function addStyle(id, styleToAdd) {
+
+            document.getElementById(id).classList.add(styleToAdd);
         }
     </script>
     <div>
         <form action="mailto:jp2kk2@gmail.com" enctype="text/plain">
-            <table class="tableStyle">
+            <table class="tableStyle" id="myTable">
                 <tr>
                     <th colspan="2">forma</th>
                 </tr>
@@ -39,31 +44,31 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Seleccion</td>
+                    <td onclick="addStyle('myTable','backChange')">Seleccion</td>
                     <td>
                         <select name="" id="">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
-                            <option value="5">5</option> 
+                            <option value="5">5</option>
                         </select>
                     </td>
                 </tr>
                 <tr>
                     <td>checkbox!</td>
-                    <td><input type="checkbox" name="checkbox" id="">Fresas <br>
+                    <td>
+                        <input type="checkbox" name="checkbox" id="">Fresas
+                        <br>
                         <input type="checkbox" name="checkbox" id="">Limones
-                        
+
                     </td>
                 </tr>
                 <td colspan="2">
                     <button type="submit">WOW!</button>
-                    <button type="button" onclick="makeNoise();">WOW!</button>
+                    <button type="button" onclick="replaceStyle('myTable','tableStyle','tableStyle2');">WOW!</button>
                 </td>
             </table>
-
-
         </form>
     </div>
 </body>
