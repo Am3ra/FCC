@@ -1,0 +1,66 @@
+body{
+     margin: 0 0 0 0;
+     padding: 0 0 0 0;
+}
+#mainContainer{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+#slider{
+    width: 800px;
+    height: 500px;
+    background-color: beige;
+    margin: 0 auto;
+    position: relative;
+}
+#imageChanger{
+    width: 100%;
+    height: 450px;
+    background-color: darkgray;
+    overflow: hidden;
+}
+
+.sliderImage{
+    width: 800px;
+    height: 450px;
+    display: inline-block;
+}
+#imageHolder {
+    width: 2410px;
+    position: relative;
+}
+#leftButton{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#rightButton{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
+
+.blue{
+    background-color:blue;
+}
+
+.firstFrame{
+    left: 0px;
+    transition: left 2s;
+}
+.secondFrame{
+    left: -803px;
+    transition: left 2s;
+}
+.thirdFrame{
+    left: -1607px;
+    transition: left 2s;
+}
