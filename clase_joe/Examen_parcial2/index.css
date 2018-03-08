@@ -222,7 +222,6 @@ html {
 
 .content h1 {
     font-size: 96px;
-    color: white;
     margin: 0;
 }
 
@@ -252,7 +251,6 @@ p {
     padding: 0;
     font-size: 20px;
     line-height: 1.7;
-    
 }
 
 .content .chat {
@@ -331,6 +329,7 @@ li p {
     width: 100px;
     height: 100px;
     background-color: #1ac4e8;
+    transition: color 1s;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -345,6 +344,10 @@ li p {
     background-attachment: fixed;
     background-size: cover;
     color: white;
+}
+
+.statistics .content {
+    margin-bottom: 0;
 }
 
 .testimonials {
@@ -418,7 +421,7 @@ input {
     margin-bottom: 5%;
 }
 
-.footer{
+.footer {
     padding-top: 5%;
     padding-bottom: 3%;
     background-color: #ddd;
@@ -426,9 +429,185 @@ input {
     align-items: flex-start;
     justify-content: space-around;
 }
+
 .footer div div span p {
-color: black;
-transition: color .5s;
+    color: black;
+    transition: color .5s;
 }
 
+.inline {
+    display: inline;
+}
 
+.stories {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titlename {
+    display: inline;
+}
+
+.picture {
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+}
+
+img {
+    display: inline;
+}
+
+.stories_content {
+    text-align: left;
+}
+
+.stories_content p {
+    margin-left: 0;
+    margin-top: 15px;
+    width: 90%;
+}
+
+.total {
+    width: 100%;
+    white-space: nowrap;
+}
+
+.total p {
+    display: inline;
+}
+
+.stats h3 {
+    margin-top: 0;
+    height: 130px;
+    width: 130px;
+    background-color: #fe6c01;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats {
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stattys {
+    display: flex;
+    justify-content: space-around;
+}
+
+.package {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.darker {
+    background-color: #ccc;
+}
+
+.package h4 {
+    font-size: 40px;
+}
+
+.innerpackage {
+    margin: 10px;
+    min-width: 200px;
+    max-width: 400px;
+}
+
+.innerpackage p {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.innerpackage .chat {
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto 10px;
+}
+
+@media (max-width: 900px) {
+    .bottom,
+    .call,
+    .number,
+    .top .chat,
+    .text h4 {
+        display: none;
+    }
+    .title {
+        font-size: 46px;
+        font-weight: 600;
+        line-height: 1;
+        text-transform: uppercase;
+        margin-top: 0;
+    }
+    .header {
+        padding-top: 5px;
+    }
+    .text h3 {
+        font-size: 46px;
+        margin-bottom: 10vw;
+    }
+    .text h2 {
+        font-size: 60px;
+    }
+    .text p {
+        font-size: 20px;
+        line-height: 1;
+    }
+    .image1 {
+        padding-bottom: 10px;
+        height: auto;
+    }
+    .services {
+        display: block;
+    }
+    .services div {
+        width: 100vw;
+    }
+    .whatDo {
+        display: block;
+    }
+    li {
+        width: 80vw;
+    }
+    .package {
+        flex-flow: row wrap;
+        flex-basis: min-content;
+    }
+    .innerpackage {
+        flex-wrap: wrap;
+        width: 400px;
+    }
+    .stories{
+        flex-wrap: wrap;
+    }
+    #info{
+        display: block;
+    }
+    label{
+        padding-bottom: 5px;
+    }
+}
+@media (max-width: 500px){
+    li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 30px
+    }
+    #icons{
+        justify-content: center;
+        margin: 0px auto;
+    }
+    .innerpackage .chat{
+        height: fit-content;
+    }
+
+}
