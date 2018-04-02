@@ -1,6 +1,6 @@
 window.onload = function () {
     new Chart(document.getElementById("bar-chart"), {
-        type: 'bar',
+        type: 'line',
         data: {
             labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
             datasets: [{
@@ -76,6 +76,9 @@ window.onload = function () {
             }]
         },
         options: {
+            legend: {
+                display: false
+            },
             title: {
                 display: true,
                 text: 'Predicted world population (millions) in 2050'

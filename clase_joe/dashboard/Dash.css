@@ -44,6 +44,10 @@ li {
     width: 90%;
     padding: 15px;
 }
+li i,li svg{
+    width: 10px;
+    margin-right: 10px;
+}
 
 .fa-home:hover {
     cursor: pointer;
@@ -171,6 +175,11 @@ li {
     margin: 30px;
     display: flex;
     justify-content: space-between;
+}
+
+canvas{
+    width: 100%;
+
 }
 
 .row3 {
