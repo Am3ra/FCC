@@ -2,6 +2,7 @@ body {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 .left {
@@ -12,26 +13,43 @@ body {
     padding: 20px;
 }
 
+.logo{
+    background-image: url(uocube.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+
 h2 {
     margin: 0;
+  
 }
 
 h3 {
     margin: 0;
+    
+    width: 120px;
+    height: 25px;  
 }
 
-/* 
+h4{
+    padding-left: 50px;
+}
+
 img{
     width: 70px;
     height: 70px;
     border-radius: 35px;
+    margin-left:  60px;
+}
     
-   
-} */
+
 
 ul {
     list-style-type: none;
     color: #717070;
+    padding-left: 0px;
 }
 
 li:hover {
@@ -76,7 +94,14 @@ li i,li svg{
     background-color: #424858;
     display: flex;
     align-items: center;
+    padding: 20px;
+    box-sizing: border-box; 
+    color: white;  
 }
+.header > *{
+    margin-right: 30px;
+}
+
 
 .mail {
     margin-left: auto;
@@ -122,6 +147,8 @@ li i,li svg{
     border-radius: 5px;
     color: white;
 }
+
+
 
 .toprow {
     display: flex;
@@ -214,12 +241,12 @@ table {
 
 th{
     border-top: 1px solid hsla(100, 0%, 0%, 0.1);
-    padding: 10px;
+    padding: 9px;
 }
 
 td {
     border-top: 1px solid #dddddd;
-    padding: 10px;
+    padding: 9px;
 }
 
 tr {
@@ -228,7 +255,7 @@ tr {
 
 table.table tr:hover td {
     cursor: default;
-    background-color: hsl(237, 54%, 93%);
+    background-color: #ECF0F3;
 }
 
 .footer {
@@ -239,7 +266,11 @@ table.table tr:hover td {
     align-content: center;
     display: flex;
 }
+.cooliob{
+    width: 150px;
+    border-radius: 0;
+}
 
 .shadow {
-    box-shadow: 0px 4px 6px 0 hsla(0%, 0%, 0%, 0.2);
+    box-shadow: 4px 8px 18px 0 #00000033;
 }
