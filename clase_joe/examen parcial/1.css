@@ -1,6 +1,10 @@
-.header, footer{
+header, footer{
     height: 10%;
     text-align: center;
+    line-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 html,
 body {
@@ -32,7 +36,6 @@ body {
 .outer1 h3 {
     background-color: beige;
     width: 80%;
-    height: 20%;
     text-align: center;
     align-self: center;
     
@@ -50,6 +53,8 @@ body {
     margin: 5%;
     margin-right: auto;
     align-self: flex-end;
+    background-size: cover;
+
 }
 .inner2{
     background-image: url("martin-jernberg-80106.jpg");
@@ -57,4 +62,5 @@ body {
     width: 20%;
     margin: 5%;
     margin-left: auto;
+    background-size: cover;
 }
