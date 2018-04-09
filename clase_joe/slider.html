@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="slider.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var slider = 1;
+
+        function replaceStyle(id, styleToRemove, styleToAdd) {
+            document.getElementById(id).classList.remove(styleToRemove);
+            document.getElementById(id).classList.add(styleToAdd);
+        }
+
+        function addStyle(id, styleToAdd) {
+
+            document.getElementById(id).classList.add(styleToAdd);
+        }
+
+        function goNext() {
+            if (slider == 1) {
+                replaceStyle("imageHolder","firstFrame", "secondFrame");
+                slider++;
+            } else if (slider == 2) {
+                replaceStyle("imageHolder","secondFrame", "thirdFrame");
+                slider++;
+            } else {
+                replaceStyle("imageHolder","thirdFrame", "firstFrame");
+                slider = 1;
+            }
+        }
+
+        function goBack() {
+            if (slider == 1) {
+                replaceStyle("imageHolder" ,"secondFrame", "firstFrame",);
+                slider--;
+            } else if (slider == 2) {
+                replaceStyle("imageHolder", "thirdFrame" ,"secondFrame");
+                slider--;
+            } else {
+                replaceStyle("imageHolder", "firstFrame","thirdFrame");
+                slider = 3;
+            }
+        }
+    </script>
+    <div id="mainContainer">
+        <div id="slider">
+            <div id="imageChanger">
+                <div id="imageHolder">
+                    <div class="sliderImage red"></div>
+                    <div class="sliderImage green"></div>
+                    <div class="sliderImage blue"></div>
+                </div>
+            </div>
+            <div id="leftButton" onclick="goNext();">
+                <button>Prev</button>
+            </div>
+            <div id="rightButton" onclick="goNext();">
+                <button>Next</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

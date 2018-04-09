@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+}
+.changinDiv{
+    margin: 0 auto;
+    width: 90%;
+    background-color: darkorchid;
+}
+
+@media (max-width:400px){
+    .changinDiv{
+        width:100%;
+        background-color: #000000;
+        color: azure;  
+    }
+}

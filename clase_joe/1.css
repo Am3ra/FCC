@@ -1,0 +1,39 @@
+@keyframes backChange{
+    0%{
+        transform:rotateY(0deg);
+    }
+    
+    50%{
+        color: bisque;
+    }
+    51%{
+        color: bisque;
+    }
+    100%{
+        background-color: #fff;
+        transform:rotateY(180deg);
+    }
+}
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.inner{
+    background-color: bisque;
+    border: 1px solid black;
+}
+
+.inner:hover{
+    animation-name: backChange;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}

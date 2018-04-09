@@ -1,0 +1,78 @@
+.roof1 {
+    fill: lime;
+    stroke: purple;
+    stroke-width: 1
+}
+.roof2 {
+    fill: #fcc;
+    stroke: purple;
+    stroke-width: 1
+}
+
+.round{
+    cx:300;
+    cy:175;
+    r:20;
+}
+
+
+.wall{
+    fill:tan;
+}
+
+.rays{
+    stroke-width:2;
+    stroke:lightcoral;
+}
+
+@keyframes backChange {
+  from{
+    transform: rotateZ(0deg);
+    transform-origin:75px 75px;
+  }
+  to{
+    transform: rotateZ(360deg);
+    transform-origin:75px 75px;
+  }
+}
+@keyframes door {
+    from {
+        transform: translate(10px, 0px);
+    }
+    to {
+        transform: translate(-00px, 0px);
+    }
+}
+@keyframes wow {
+    from {
+        fill: fuchsia
+    }
+    to {
+        fill: deepskyblue;
+    }
+}
+
+.sunrays{
+    animation-name: backChange;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform-origin: center, center;
+}
+
+.grass{
+    stroke-width: 2;
+    stroke:green;
+}
+
+.door {
+    animation-name: door;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+.window{
+    animation-name: wow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}

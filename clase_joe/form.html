@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function replaceStyle(id, styleToRemove, styleToAdd) {
+            document.getElementById(id).classList.remove(styleToRemove);
+            document.getElementById(id).classList.add(styleToAdd);
+        }
+
+        function addStyle(id, styleToAdd) {
+
+            document.getElementById(id).classList.add(styleToAdd);
+        }
+    </script>
+<div style="position: relative; width: 300px; height: 197px;">
+    <a href="https://phet.colorado.edu/sims/capacitor-lab/capacitor-lab_en.jnlp" style="text-decoration: none;">
+        <img src="https://phet.colorado.edu/sims/capacitor-lab/capacitor-lab-600.png" alt="Capacitor Lab" style="border: none;"
+            width="300" height="197" />
+        <div style="position: absolute; width: 200px; height: 80px; left: 50px; top: 58px; background-color: #FFF; opacity: 0.6; filter: alpha(opacity = 60);"></div>
+        <table style="position: absolute; width: 200px; height: 80px; left: 50px; top: 58px;">
+            <tr>
+                <td style="text-align: center; color: #000; font-size: 24px; font-family: Arial,sans-serif;">Click to Run</td>
+            </tr>
+        </table>
+    </a>
+</div>
+    <div>
+        <form action="mailto:jp2kk2@gmail.com" enctype="text/plain">
+            <table class="tableStyle" id="myTable">
+                <tr>
+                    <th colspan="2">forma</th>
+                </tr>
+                <tr>
+                    <td>form</td>
+                    <td>valor</td>
+                </tr>
+                <tr>
+                    <td>nombre</td>
+                    <td>
+                        <input type="text" name="contactName" id="" placeholder="Name Here!">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mensaje</td>
+                    <td>
+                        <textarea name="contactMessage" id=""></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td onclick="addStyle('myTable','backChange')">Seleccion</td>
+                    <td>
+                        <select name="" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>checkbox!</td>
+                    <td>
+                        <input type="checkbox" name="checkbox" id="">Fresas
+                        <br>
+                        <input type="checkbox" name="checkbox" id="">Limones
+
+                    </td>
+                </tr>
+                <td colspan="2">
+                    <button type="submit">WOW!</button>
+                    <button type="button" onclick="replaceStyle('myTable','tableStyle','tableStyle2');">WOW!</button>
+                </td>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
